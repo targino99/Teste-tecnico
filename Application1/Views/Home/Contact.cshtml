@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Contato";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulma.min.css"
+
+
+</head>
+
+<body>
+    <div>
+        <h1>Formulario</h1>
+        <p>Complete suas informações</p>
+        <br>
+    </div>
+    <form>
+        <fieldset>
+            <legend>Área de Interesse:</legend>
+            <select name="Áreas" id="area">
+                <option value="Administração">Administração</option>
+                <option value="Contato" >Contato</option> 
+                <option value="Currículo"selected>Curriculo</option>
+                
+            </select><br>
+            <br>
+            
+        </fieldset>
+        <div class="colums is centered">
+            <fieldset>
+                <div>
+
+
+
+
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                </div>
+
+                <div>
+
+                    <input type="text" name="nome" id="sobrenome" placeholder="Seu sobrenome">
+                </div>
+
+            </fieldset>
+
+
+            <div>
+
+                <input type="email" name="email" id="email" placeholder="Seu email">
+            </div>
+
+            <div>
+                <textarea cols="40" rows="5">Escreva sua mensagem</textarea>
+            </div><br />
+            <br>
+            <label>Upload do documento</label>
+            <input type="hidden" name="MAX_FILE_SIZE" value="Upload do documento" /> <input name="Upload do documento" type="file" />
+
+
+            <input type="submit" value="Enviar" /><br />
+        </div>
+
+    </form>
+    
+
+</body>
+</html>
